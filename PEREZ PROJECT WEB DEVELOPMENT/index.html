@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop navigation bar -->
+    <nav id="desktop-nav">
+      <div class="logo">PORTFOLIO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Hobbies & Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--  navigation bar for mobile -->
+    <nav id="hamburger-nav">
+      <div class="logo">PORTFOLIO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Hobbies & Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Profile section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profile-modified.png" alt="Jay Loue profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jay Loue Perez</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="me.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+             <!-- Work experience details -->
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Work Experience</h3>
+              <p>2+ years <br />Photographer & Videographer</p>
+            </div>
+            <!-- Education details -->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science in Computer Science</p>
+            </div>
+          </div>
+          <!-- Text description -->
+          <div class="text-container">
+            <p>
+              <b>Hi! I'm Jay Loue Perez a 3rd year student of Bohol Island State
+              University Balilihan Campus. I am currently taking a course of BS
+              Computer Science. I'm from Bongbong, Catigbian, Bohol.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Arrow icon to navigate to the next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!-- Experience section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Hobbies and Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+           <!-- Hobbies and skills details -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Hobbies</h2>
+             <!-- List of hobbies -->
+            <div class="article-container">
+              <!-- Each hobby is listed with an icon -->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Playing Guitar</h3>
+                </div>
+              </article>
+               <!-- Additional hobbies listed similarly -->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mobile Games</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Listening to Musics</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Watching Movies</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photography</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Eating Foods</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+           <!-- Skills details -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+             <!-- List of skills -->
+            <div class="article-container">
+              <!-- Each skill is listed with an icon and proficiency level -->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Programming</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Android Studio</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photographer & Videographer</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML,CSS and JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Arrow icon to navigate to the next section -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+     <!-- Projects section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Details of each project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="ponggame.png" alt="Project 1" class="project-img" />
+            </div>
+             <!-- Project title and Github link -->
+            <h2 class="experience-sub-title project-title">PONG GAME</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Jayloueperez/ponggame.git'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="cinema.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">CINEMA TICKETING </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Jayloueperez/cinematicketing.git'"
+              >
+                Github
+              </button>
+              
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img  src="typebot.jpg" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">TYPEBOT AI</h2>
+            
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Jayloueperez/typebotAI.git'"
+              >
+                Github
+              </button>
+              
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   
+     <!-- Contact section -->
+     
+      <section class="contact"id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <form action="https://formspree.io/f/moqgbjqq"
+        method="POST">
+        <div class="input-box">
+        <input type="text" name="fname"placeholder="Name"/>
+        <input type="email" email="email"placeholder="Email Address"required/>
+        </div>
+        
+        
+        
+        <textarea name=""id=""cols="20"rows="10" placeholder="Your Message">
+        </textarea>
+        <input type="submit"value="SEND"class="btn"/>
+        </form>
+        
+       
+      <!-- Contact information -->  
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="insta.jpg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://www.instagram.com/jayloueeee/">Instagram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="fb1-modified.png"
+            alt="fb icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.facebook.com/jayloue.perez.3?mibextid=ZbWKwL">Facebook</a></p>
+        </div>
+        
+      </div>
+    
+     <!-- Footer section -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jay Loue. All Rights Reserved.</p>
+    </footer>
+     <!-- javascript link -->
+    <script src="script.js"></script>
+     
+  </body>
+</html>
